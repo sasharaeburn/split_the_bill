@@ -3,28 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Split that bill</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap">
 </head>
 <body>
-    <div class="container">
-        <div class="calculator">
-            <form class="question">
-                <p>How much was the bill?</p>
-                <input type="text" class="answer_area">
-            </form>
-            <form class="question">
-                <p>How many people are splitting the bill?</p>
-                <input type="text" class="answer_area">
-            </form>
+<h1>Split that bill!</h1>
+<div class="container">
+    <div class="calculator">
+        <form class="question">
+            <p>How much was the bill?</p>
+            <input type="text" class="answer_area" required>
+        </form>
+        <form class="question">
+            <p>How many people are splitting the bill?</p>
+            <input type="text" class="answer_area" required>
+        </form>
+        <div class="tip_container">
+            <p>How much do you want to tip?</p>
             <select class="tip">
-                <p>How much do you want to tip?</p>
                 <option value="0">No tip</option>
                 <option value="0.05">5%</option>
                 <option value="0.10">10%</option>
                 <option value="0.15">15%</option>
                 <option value="0.20">20%</option>
             </select>
+        </div>
+        <div class="button_container">
             <button type="submit" class="calculate_bill">Calculate</button>
         </div>
     </div>
+</div>
 </body>
 </html>
