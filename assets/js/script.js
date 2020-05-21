@@ -24,5 +24,5 @@ function calculatePaidAmount() {
 function displayResult(result) {
     let showResult = document.getElementById('result');
 
-    showResult.innerHTML = result;
+    showResult.innerHTML = result + ' per person';
 }
