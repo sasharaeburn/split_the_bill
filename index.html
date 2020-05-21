@@ -13,26 +13,27 @@
     <div class="calculator">
         <form class="question">
             <p>How much was the bill?</p>
-            <input type="text" class="answer_area" required>
+            <input type="text" class="answer_area" id="paid_amount" required>
         </form>
         <form class="question">
             <p>How many people are splitting the bill?</p>
-            <input type="text" class="answer_area" required>
+            <input type="text" class="answer_area" id="people_amount" required>
         </form>
         <div class="tip_container">
             <p>How much do you want to tip?</p>
-            <select class="tip">
+            <select class="tip" id="tip">
                 <option value="0">No tip</option>
-                <option value="0.05">5%</option>
-                <option value="0.10">10%</option>
-                <option value="0.15">15%</option>
-                <option value="0.20">20%</option>
+                <option value="5">5%</option>
+                <option value="10">10%</option>
+                <option value="15">15%</option>
+                <option value="20">20%</option>
             </select>
         </div>
         <div class="button_container">
-            <button type="submit" class="calculate_bill">Calculate</button>
+            <button type="submit" id="calculate_button" class="calculate_bill">Calculate</button>
         </div>
     </div>
 </div>
+<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
