@@ -1,8 +1,10 @@
-let clickButton = document.getElementById('calculate_button');
-clickButton.addEventListener('click', event => {
+let form = document.getElementById('calculate_total');
+form.addEventListener('submit', event => {
     event.preventDefault();
 
-    alert(calculatePaidAmount());
+    let result = calculatePaidAmount();
+
+    displayResult(result);
 })
 
 function calculatePaidAmount() {
@@ -19,4 +21,8 @@ function calculatePaidAmount() {
     return total / newPeopleAmount;
 }
 
+function displayResult(result) {
+    let showResult = document.getElementById('result');
 
+    showResult.innerHTML = result;
+}

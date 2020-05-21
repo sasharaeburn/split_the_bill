@@ -11,27 +11,34 @@
 <h1>Split that bill!</h1>
 <div class="container">
     <div class="calculator">
-        <form class="question">
-            <p>How much was the bill?</p>
-            <input type="text" class="answer_area" id="paid_amount" required>
+        <form id="calculate_total">
+            <div class="form_field">
+                <label for="paid_amount">How much was the bill?</label>
+                <input type="number" step="0.01" min="1" max="100" class="answer_area" id="paid_amount" required>
+            </div>
+
+            <div class="form_field">
+                <label for="people_amount">How many people are splitting the bill?</label>
+                <input type="number" step="1" min="1" max="100" class="answer_area" id="people_amount" required>
+            </div>
+
+            <div class="form_field">
+                <label for="tip">How much do you want to tip?</label>
+                <select class="tip" id="tip">
+                    <option value="0">No tip</option>
+                    <option value="5">5%</option>
+                    <option value="10">10%</option>
+                    <option value="15">15%</option>
+                    <option value="20">20%</option>
+                </select>
+            </div>
+
+            <div class="button_container">
+                <button type="submit" class="calculate_bill">Calculate</button>
+            </div>
         </form>
-        <form class="question">
-            <p>How many people are splitting the bill?</p>
-            <input type="text" class="answer_area" id="people_amount" required>
-        </form>
-        <div class="tip_container">
-            <p>How much do you want to tip?</p>
-            <select class="tip" id="tip">
-                <option value="0">No tip</option>
-                <option value="5">5%</option>
-                <option value="10">10%</option>
-                <option value="15">15%</option>
-                <option value="20">20%</option>
-            </select>
-        </div>
-        <div class="button_container">
-            <button type="submit" id="calculate_button" class="calculate_bill">Calculate</button>
-        </div>
+
+        <div class="result" id="result"></div>
     </div>
 </div>
 <script type="text/javascript" src="assets/js/script.js"></script>

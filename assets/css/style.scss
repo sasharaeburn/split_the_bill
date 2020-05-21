@@ -37,39 +37,49 @@ h1 {
   text-align: center;
 }
 
+.form_field {
+  margin-bottom: 15px;
+  text-align: center;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
 .container {
   position: relative;
   max-width: 600px;
   margin: 30px auto 30px;
   padding: 25px 15px;
   font-size: 1.1em;
+}
 
-  .question {
-    position: relative;
-    padding: 10px;
-    text-align: center;
-  }
+.question {
+  position: relative;
+  padding: 10px;
+  text-align: center;
+}
 
-  .tip_container {
-    position: relative;
-    padding: 10px;
-    text-align: center;
-  }
+.button_container {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
 
-  .button_container {
-    position: relative;
-    text-align: center;
-    margin-top: 20px;
-  }
+.calculate_bill {
+  background-color: white;
+  position: relative;
+  padding: 5px 12px;
+  border: #4e4d4d 1px solid;
+  border-radius: 5px;
+  text-align: center;
+}
 
-  .calculate_bill {
-    background-color: white;
-    position: relative;
-    padding: 5px 12px;
-    border: #4e4d4d 1px solid;
-    border-radius: 5px;
-    text-align: center;
-  }
+.result {
+  margin-bottom: 15px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 
